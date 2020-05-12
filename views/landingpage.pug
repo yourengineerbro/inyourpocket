@@ -1,0 +1,90 @@
+meta(charset='UTF-8')
+meta(name='viewport' content='width=device-width,initial-scale=1')
+meta(http-equiv='X-UA-Compatible' content='ie=edge')
+title InYourPocket
+link(href='https://fonts.googleapis.com/css?family=Girassol&display=swap' rel='stylesheet')
+meta(name='description' content='A web portal to Save links Anywhere on any device to access anytime.')
+link#favicon(rel='icon' href='https://cdn.glitch.com/b9640887-a787-4f35-bad7-0be141707a72%2Fpocket.jpg?v=1587456241713' type='image/x-icon')
+
+style 
+    include loginstyle.css
+    include loginformstyle.css
+style.
+  
+  body{
+        background-color: #4064ac;
+    }
+    footer a{
+    margin:0;
+    }
+    footer h4{
+    margin:0;
+    }
+    footer{
+      background-color: black;
+      color:white;
+      text-align:center;
+      height:auto;
+      width:100%;
+      position:absolute;
+      top:110%;
+    }
+    footer a{
+      text-decoration: none;
+    }
+    footer a:hover{
+       text-decoration: underline;
+    }
+    #github{
+      color:white;
+    } 
+#par
+  p.hideit #{data}
+#main
+  #info
+    #content
+      font(color='red') Save 
+      | Anywhere
+      br
+      font(color='blue') Access
+      |  Everywhere!
+  #log
+    input#form-switch(type='checkbox')
+    form#register-form(action='https://inyourpocket.glitch.me/signup' method='post')
+      .container
+        .l#currentactive SignUp
+        label.r#currentpause(for='form-switch') LogIn
+      .wholeinput
+        label.u(for='username') Username
+        input#forminput(name='username' type='text' placeholder='Set a Username' required)
+        label(for='password')
+          | Password
+          font(size='1px' color='9d9174') (atleast 8 characters)
+        input#forminput(name='password' type='password' placeholder='Password' required)
+        label(for='confirmpass') Confirm Password
+        input#forminput(type='password' name='confirmpassword' placeholder='Confirm password' required)
+      button#loginbtn(type='submit') Get Started!
+      p#msgg
+        span WARNING:
+        | Please take care to remember your passsword.Profiles contain no personal information which can be used to prove an account belongs to you.If you forget your password then account recovery is not possible.
+    form#login-form(action='https://inyourpocket.glitch.me/login' method='post')
+      .container
+        label.l#currentpause(for='form-switch') SignUp
+        .r#currentactive LogIn
+      .wholeinput
+        label.u(for='username') Username
+        input#forminput(name='username' type='text' placeholder='Enter Username' required)
+        label(for='password') Password
+        input#forminput(name='password' type='password' placeholder='Password' required)
+      button#loginbtn(type='submit') LogIn
+  #mininfo
+    font(color='red') Save 
+    | Anywhere
+    font(color='blue') Access
+    |  Everywhere!
+footer
+  h4 Made By Aman Gupta
+  a(href='https://www.facebook.com/profile.php?id=100048014183819' target="_blank") Find me on Facebook
+  br
+  a#github(href='https://github.com/guptaaman9/inyourpocket' target="_blank") View project on Github
+  //a#about (href='https://inyourpocket.glitch.me/about' target="_blank") About 

@@ -1,0 +1,20 @@
+
+#main {
+    min-height:100%;
+    height: auto;
+    width: 96%;
+    position: absolute;
+    background-color: white;
+    margin-top: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+    /* text-align:center; */
+  
+    align-content: center;
+    justify-content: center;
+    border-radius: 10%;
+    background-image: radial-gradient(white, white, white, white, lightpink, pink);
+    
+}
+

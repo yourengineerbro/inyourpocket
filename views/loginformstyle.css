@@ -1,0 +1,132 @@
+
+ form {
+   width:100%;
+   height:100%;
+ }
+ #forminput{
+     width: 93%;
+     height:40px;
+    border: 1px solid #cccccc;
+    box-shadow: 0 0px 8px 0.5px rgb(0,0,0,0.1) ;   
+ }
+/* #forminput:hover , */
+
+#forminput:focus{
+
+  box-shadow:0 0 0px 1.5px #198dcd;
+
+}
+
+#currentactive{
+    background: #33c3f0;
+    color:white;
+   
+    text-align: center;
+/*     line-height: 44px; */
+ 
+}
+
+#currentpause{
+    background:#435259;
+    color:#9d9174;
+    
+    text-align: center;
+    
+}
+.wholeinput{
+  margin-left:13px;
+  margin-top:15%;
+}
+/* .wholeinput :nth-child(odd){margin-top:14%;} */
+/* .wholeinput :nth-child(1){margin-top:25%;}
+.wholeinput :nth-child(2){margin-top:10%;}
+.wholeinput :nth-child(3){margin-top:8%;} */
+.l{
+    grid-area:l;
+    border-top-left-radius:10px;
+    line-height: 45px;
+  
+}
+.r{
+    grid-area:r;
+    line-height:45px;
+    border-top-right-radius:10px;
+
+}
+#currentactive:hover , #currentpause:hover{
+    background:#198dcd;
+    color:white;
+    cursor: pointer;
+}
+ .container{
+ /*    margin-top:5px;
+  margin-left:5px;
+  margin-right:5px;   */
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 50px;
+  grid-template-areas: "l r";
+  
+
+ /*  background:grey; */
+ }
+ #form-switch {
+   display:none
+ }
+ #login-form {
+   display:none
+ }
+ #form-switch:checked~#register-form {
+   display:none;
+ }
+ #form-switch:checked~#login-form {
+   display:block;
+ }
+ #submitbtn , #loginbtn{
+    height:50px;
+    width:80%;
+    text-align:center;
+    text-justify: auto;
+    background: #33c3f0;
+    color:white;
+    font-size:20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin-top:10%;
+    margin-left:10%;
+ }
+ #submitbtn:hover,#loginbtn:hover{
+    box-shadow:0 0 5px 1.5px #198dcd;
+    
+    cursor: pointer;
+ }
+ label{
+   font-size: 14px;
+ }
+ #par{
+   position: relative;
+   z-index:1;
+   margin-top: 0px;
+   margin-left:35%;
+ }
+ .hideit {
+   position: absolute;
+   margin:100px auto;
+   text-align:center;
+   font-size: 16px;
+   font-weight:bold;
+   padding:10px;
+   border:1px black solid;
+   width:40%;
+   color: red;
+  animation: hide 3s forwards;
+}
+.hideit:empty{
+  display:none;
+}
+
+ @keyframes hide {
+  0%   {opacity: 1;}
+  90%  {opacity: 1;}
+  100% {opacity: 0;}
+}
